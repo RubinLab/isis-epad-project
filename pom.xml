@@ -14,6 +14,7 @@
 	<modules>
 		<module>../aim3api</module>
 		<module>../epad-ws</module>
+		<module>../epad</module>
 	</modules>
 
 	<properties>
