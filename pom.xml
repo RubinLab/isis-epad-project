@@ -1,26 +1,30 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
-	<modelVersion>4.0.0</modelVersion>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 
-	<groupId>edu.stanford.isis</groupId>
-	<artifactId>epad-project</artifactId>
-	<packaging>pom</packaging>
-	<version>1.2-SNAPSHOT</version>
+  <organization> 
+    <name>RubinLab</name> 
+    <url>http://www.stanford.edu/~rubin/links.html</url>
+  </organization>
 
-	<name>ePAD Project</name>
-
-	<modules>
-		<module>../aim3api</module>
-		<module>../epad-common</module>
-		<module>../epad-plugins</module>
-		<module>../epad-ws</module>
-		<module>../epad</module>
-	</modules>
-
-	<properties>
-	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
+  <groupId>edu.stanford.isis</groupId>
+  <artifactId>epad-project</artifactId>
+  <packaging>pom</packaging>
+  <version>1.2-SNAPSHOT</version>
+  <name>ePAD Project</name>
+  <url>http://epad.stanford.edu/</url>
+  
+  <modules>
+    <module>../aim3api</module>
+    <module>../epad-common</module>
+    <module>../epad-plugins</module>
+    <module>../epad-ws</module>
+    <module>../epad</module>
+  </modules>
+  
 </project>
