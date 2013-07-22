@@ -4,6 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <properties>
+    <matlab.release.number>R2010b</matlab.release.number>
     <aim3api.version>1.0</aim3api.version>
     <restlet.version>2.1.2</restlet.version> 
     <gwt.version>2.5.1</gwt.version>
