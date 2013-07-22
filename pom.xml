@@ -61,9 +61,11 @@
       <url>http://www.dcm4che.org/maven2/</url>
     </repository>
 
-    <!-- Create repository in ./lib for JARs that can not be found in public Maven repositories. -->
+    <!-- Use repository in ${project.basedir}/lib for JARs that can not be found in public Maven repositories. -->
+    <!-- This parent project ./lib directory contains dependencies that may be used by sub-projects. -->
+    <!-- Sub-projects may have their own ./lib directories for dependencies that are specific to them. -->
     <!-- See: http://blog.dub.podval.org/2010/01/maven-in-project-repository.html -->
-    <!-- Ultimately create a local Nexus repository or the like for these. -->
+    <!-- May ultimately use a local Nexus server or the like for some of these dependencies. -->
     <repository>
       <id>lib</id>
       <name>lib</name>
