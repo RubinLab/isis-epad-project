@@ -10,7 +10,7 @@
     <gwt.version>2.5.1</gwt.version>
     <dcm4chee.version>2.0.27</dcm4chee.version>
     <servlet.api.version>2.5</servlet.api.version>
-    <jetty.version>7.3.0.v20110203</jetty.version>
+    <jetty.version>7.6.11.v20130520</jetty.version>
     <mysql.connector.version>5.1.22</mysql.connector.version>
     <gson.version>2.2.1</gson.version>
     <commons.fileupload.version>1.2.2</commons.fileupload.version>
@@ -103,6 +103,8 @@
       </plugins>
     </pluginManagement>
   </build>
+
+  <!-- TODO Add a <dependencyManagement> section and modify child POMs appropriately -->
 
   <dependencies>
 
