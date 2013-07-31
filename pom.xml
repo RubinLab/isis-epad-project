@@ -6,7 +6,8 @@
   <properties>
     <matlab.release.number>R2010b</matlab.release.number>
     <aim3api.version>1.0</aim3api.version>
-    <restlet.version>2.1.2</restlet.version> 
+    <restlet.version>2.1.2</restlet.version>
+<!--    <restlet.version>2.2-M3</restlet.version>  -->
     <gwt.version>2.5.1</gwt.version>
     <dcm4chee.version>2.0.27</dcm4chee.version>
     <servlet.api.version>2.5</servlet.api.version>
