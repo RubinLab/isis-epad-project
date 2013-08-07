@@ -41,7 +41,7 @@
   <groupId>edu.stanford.isis.epad</groupId>
   <artifactId>epad-project</artifactId>
   <packaging>pom</packaging>
-  <version>1.2-SNAPSHOT</version>
+  <version>1.1</version>
   <name>ePAD Project</name>
   <url>http://epad.stanford.edu/</url>
 
