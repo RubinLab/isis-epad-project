@@ -6,6 +6,8 @@
   <properties>
     <matlab.release.number>R2010b</matlab.release.number>
     <aim3api.version>1.0</aim3api.version>
+    <tedseg.plugin.version>1.1</tedseg.plugin.version> <!-- Arbitrarily pick version 1.1. Versioned independently of ePAD -->
+    <jjvector.plugin.version>1.1</jjvector.plugin.version> <!-- Arbitrarily pick version 1.1. Versioned independently of ePAD -->
     <restlet.version>2.1.2</restlet.version>
     <gwt.version>2.5.1</gwt.version>
     <dcm4chee.version>2.0.27</dcm4chee.version>
@@ -31,6 +33,7 @@
     <!-- 1.0 is our version number for the Pixelmed JAR in our local repository (since it has no public Maven repository). -->
     <pixelmed.version>1.0</pixelmed.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
   </properties>
 
   <organization> 
