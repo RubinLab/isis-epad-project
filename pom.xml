@@ -8,32 +8,33 @@
     <aim3api.version>1.0</aim3api.version>
     <tedseg.plugin.version>1.1</tedseg.plugin.version> <!-- Arbitrarily pick version 1.1. Versioned independently of ePAD -->
     <jjvector.plugin.version>1.1</jjvector.plugin.version> <!-- Arbitrarily pick version 1.1. Versioned independently of ePAD -->
-    <restlet.version>2.1.2</restlet.version>
+    <restlet.version>2.1.3</restlet.version>
     <gwt.version>2.5.1</gwt.version>
     <dcm4chee.version>2.0.27</dcm4chee.version>
     <servlet.api.version>2.5</servlet.api.version>
     <jetty.version>7.6.11.v20130520</jetty.version>
     <mysql.connector.version>5.1.22</mysql.connector.version>
     <gson.version>2.2.1</gson.version>
-    <commons.fileupload.version>1.2.2</commons.fileupload.version>
-    <commons.logging.version>1.1.1</commons.logging.version>
-    <httpmime.version>4.2.3</httpmime.version>
-    <httpcore.version>4.2.3</httpcore.version>
-    <httpclient.version>4.2.3</httpclient.version>
-    <fluent.hc.version>4.2.3</fluent.hc.version>
-    <httpclient.cache.version>4.2.3</httpclient.cache.version>
+
     <commons.httpclient.version>3.1</commons.httpclient.version>
-    <freemarker.version>2.3.14</freemarker.version>
+    <commons.fileupload.version>1.2.2</commons.fileupload.version>
     <commons.cli.version>1.2</commons.cli.version>
     <commons.io.version>1.4</commons.io.version>
     <commons.codec.version>1.7</commons.codec.version>
+
+    <httpclient.version>4.2.3</httpclient.version>
+    <httpclient.cache.version>4.2.3</httpclient.cache.version>
+    <httpmime.version>4.2.3</httpmime.version>
+    <httpcore.version>4.2.3</httpcore.version>
+
+    <freemarker.version>2.3.14</freemarker.version>
     <log4j.version>1.2.16</log4j.version>
     <slf4j.version>1.6.1</slf4j.version>
     <junit.version>3.8.1</junit.version>
     <!-- 1.0 is our version number for the Pixelmed JAR in our local repository (since it has no public Maven repository). -->
     <pixelmed.version>1.0</pixelmed.version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <organization> 
