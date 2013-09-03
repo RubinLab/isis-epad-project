@@ -6,19 +6,16 @@
     <groupId>edu.stanford.isis.epad</groupId>
     <artifactId>pom-common</artifactId>
     <version>1.1</version>
-    <relativePath>pom-common.xml</relativePath>
+    <relativePath>../pom-common.xml</relativePath>
   </parent>
 
-  <artifactId>epad-project</artifactId>
+  <artifactId>epad-viewer-project</artifactId>
   <packaging>pom</packaging>
-  <name>ePAD Project</name>
+  <name>ePAD Viewer Project</name>
 
   <modules>
-    <module>../aim3api</module>
-    <module>../epad-common</module>
-    <module>../epad-plugins</module>
-    <module>../epad-ws</module>
-    <module>../epad</module>
+    <module>../../aim3api</module>
+    <module>../../epad</module>
   </modules>
 
 </project>
