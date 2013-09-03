@@ -67,8 +67,7 @@
     </repository>
 
     <!-- Use repository in ${project.basedir}/lib for JARs that can not be found in public Maven repositories. -->
-    <!-- This parent project ./lib directory contains dependencies that may be used by sub-projects. -->
-    <!-- Sub-projects may have their own ./lib directories for dependencies that are specific to them. -->
+    <!-- Each project ./lib directory should contain dependencies that may be used by that project. -->
     <!-- See: http://blog.dub.podval.org/2010/01/maven-in-project-repository.html -->
     <!-- May ultimately use a local Nexus server or the like for some of these dependencies. -->
     <repository>
