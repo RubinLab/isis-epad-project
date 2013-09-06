@@ -1,18 +1,90 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>edu.stanford.isis.epad</groupId>
-    <artifactId>pom-common</artifactId>
-    <version>1.1</version>
-    <relativePath>pom-common.xml</relativePath>
-  </parent>
+  <properties>
+    <restlet.version>2.1.3</restlet.version>
+    <gwt.version>2.5.1</gwt.version>
+    <dcm4chee.version>2.0.27</dcm4chee.version>
+    <servlet.api.version>2.5</servlet.api.version>
+    <jetty.version>8.1.12.v20130726</jetty.version>
 
+    <commons.httpclient.version>3.1</commons.httpclient.version>
+    <commons.fileupload.version>1.2.2</commons.fileupload.version>
+    <commons.cli.version>1.2</commons.cli.version>
+    <commons.io.version>1.4</commons.io.version>
+    <commons.codec.version>1.7</commons.codec.version>
+
+    <apache.httpclient.version>4.2.3</apache.httpclient.version>
+    <apache.httpcore.version>4.2.2</apache.httpcore.version> <!-- Using 4.2.3 causes a class compatability issue -->
+    <apache.httpmime.version>4.2.3</apache.httpmime.version>
+
+    <imagej.version>1.47</imagej.version>
+
+    <log4j.version>1.2.16</log4j.version>
+    <slf4j.version>1.6.1</slf4j.version>
+    <junit.version>3.8.1</junit.version>
+
+    <mysql.connector.version>5.1.22</mysql.connector.version>
+    <gson.version>2.2.1</gson.version>
+
+    <!-- 1.0 is our version number for the Pixelmed JAR in our local repository (since it has no public Maven repository). -->
+    <pixelmed.version>1.0</pixelmed.version>
+
+    <matlab.release.number>R2010b</matlab.release.number>
+    <aim3api.version>1.0</aim3api.version>
+    <tedseg.plugin.version>1.1</tedseg.plugin.version> <!-- Arbitrarily pick version 1.1. Versioned independently of ePAD -->
+    <jjvector.plugin.version>1.1</jjvector.plugin.version> <!-- Arbitrarily pick version 1.1. Versioned independently of ePAD -->
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <organization> 
+    <name>RubinLab</name> 
+    <url>http://www.stanford.edu/~rubin/links.html</url>
+  </organization>
+
+  <groupId>edu.stanford.isis.epad</groupId>
   <artifactId>epad-project</artifactId>
   <packaging>pom</packaging>
+  <version>1.1</version>
   <name>ePAD Project</name>
+  <url>http://epad.stanford.edu/</url>
 
+  <repositories>
+
+    <repository>
+      <id>maven-restlet</id>
+      <name>Public online Restlet repository</name>
+      <url>http://maven.restlet.org</url>
+    </repository>
+
+    <repository>
+      <id>dcm4che</id>
+      <name>DCM4CHE Maven Repository</name>
+      <url>http://www.dcm4che.org/maven2/</url>
+    </repository>
+
+    <!-- Use repository in ${project.basedir}/lib for JARs that can not be found in public Maven repositories. -->
+    <!-- Each project ./lib directory should contain dependencies that may be used by that project. -->
+    <!-- See: http://blog.dub.podval.org/2010/01/maven-in-project-repository.html -->
+    <!-- May ultimately use a local Nexus server or the like for some of these dependencies. -->
+    <repository>
+      <id>lib</id>
+      <name>lib</name>
+      <releases>
+        <enabled>true</enabled>
+        <checksumPolicy>ignore</checksumPolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <url>file://${project.basedir}/lib</url>
+    </repository>
+
+  </repositories>
+  
   <modules>
     <module>../aim3api</module>
     <module>../epad-common</module>
@@ -21,4 +93,52 @@
     <module>../epad</module>
   </modules>
 
+  <build>
+    <pluginManagement>
+      <plugins>
+
+	<plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+	  <version>2.3.2</version>
+          <configuration>
+            <source>1.6</source>
+            <target>1.6</target>
+          </configuration>
+	</plugin>
+
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <!-- TODO Add a <dependencyManagement> section and modify child POMs appropriately -->
+
+  <dependencies>
+
+    <dependency>
+	<groupId>log4j</groupId>
+	<artifactId>log4j</artifactId>
+        <version>${log4j.version}</version>
+    </dependency>
+    
+    <dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+    </dependency>
+    
+    <dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-log4j12</artifactId>
+        <version>${slf4j.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+  
 </project>
