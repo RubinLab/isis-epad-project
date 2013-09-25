@@ -9,7 +9,7 @@
     <dcm4chee.version>2.0.27</dcm4chee.version>
     <servlet.api.version>2.5</servlet.api.version>
     <!-- Version 8.+ of Jetty uses version 3+ of javax.servlet which can cause problems with the version 2.5 that appears to be needed by Restlets -->
-    <jetty.version>7.6.13.v20130916</jetty.version>
+    <jetty.version>7.6.5.v20120716</jetty.version>
 
     <commons.httpclient.version>3.1</commons.httpclient.version>
     <commons.fileupload.version>1.2.2</commons.fileupload.version>
