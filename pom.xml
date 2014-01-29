@@ -33,13 +33,14 @@
     <!-- 1.0 is our version number for the Pixelmed JAR in our local repository (since it has no public Maven repository). -->
     <pixelmed.version>1.0</pixelmed.version>
 
-    <matlab.release.number>R2010b</matlab.release.number> 
-<!--    <matlab.release.number>R2013b</matlab.release.number> -->
-
-    <matlab.release.number.tedseg>R2010b</matlab.release.number.tedseg> 
-    <matlab.release.number.jjvector>R2010b</matlab.release.number.jjvector> 
+    <!-- For the moment we give plugins the same version number as the project. -->
+    <!-- Plugins may require different versions of MATLAB so we specify this here. -->
     <tedseg.plugin.version>1.1</tedseg.plugin.version>
+    <matlab.release.number.tedseg>R2010b</matlab.release.number.tedseg> 
+
     <jjvector.plugin.version>1.1</jjvector.plugin.version> 
+    <matlab.release.number.jjvector>R2010b</matlab.release.number.jjvector> 
+
     <aimapi.version>1.0</aimapi.version> 
     <aim3api.version>1.0</aim3api.version>  <!-- TODO Get rid of after testing -->
 
