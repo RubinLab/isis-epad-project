@@ -33,11 +33,15 @@
     <!-- 1.0 is our version number for the Pixelmed JAR in our local repository (since it has no public Maven repository). -->
     <pixelmed.version>1.0</pixelmed.version>
 
-    <matlab.release.number>R2010b</matlab.release.number>
+    <matlab.release.number>R2010b</matlab.release.number> 
+<!--    <matlab.release.number>R2013b</matlab.release.number> -->
+
+    <matlab.release.number.tedseg>R2010b</matlab.release.number.tedseg> 
+    <matlab.release.number.jjvector>R2010b</matlab.release.number.jjvector> 
+    <tedseg.plugin.version>1.1</tedseg.plugin.version>
+    <jjvector.plugin.version>1.1</jjvector.plugin.version> 
     <aimapi.version>1.0</aimapi.version> 
     <aim3api.version>1.0</aim3api.version>  <!-- TODO Get rid of after testing -->
-    <tedseg.plugin.version>1.1</tedseg.plugin.version> <!-- Arbitrarily pick version 1.1. Versioned independently of ePAD -->
-    <jjvector.plugin.version>1.1</jjvector.plugin.version> <!-- Arbitrarily pick version 1.1. Versioned independently of ePAD -->
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -47,7 +51,7 @@
     <url>http://www.stanford.edu/~rubin/links.html</url>
   </organization>
 
-  <groupId>edu.stanford.isis.epad</groupId>
+  <groupId>edu.stanford.epad</groupId>
   <artifactId>epad-project</artifactId>
   <packaging>pom</packaging>
   <version>1.1</version>
