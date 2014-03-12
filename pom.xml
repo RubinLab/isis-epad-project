@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -22,6 +23,7 @@
     <apache.httpmime.version>4.2.3</apache.httpmime.version>
 
     <imagej.version>1.47</imagej.version>
+    <jai.imageio.version>1.1</jai.imageio.version>
 
     <log4j.version>1.2.16</log4j.version>
     <slf4j.version>1.6.1</slf4j.version>
@@ -33,8 +35,9 @@
     <!-- 1.0 is our version number for the Pixelmed JAR in our local repository (since it has no public Maven repository). -->
     <pixelmed.version>1.0</pixelmed.version>
 
-    <!-- For the moment we give plugins the same version number as the project. -->
+    <!-- For the moment we give plugins the same version number as the overall ePAD project, though they could be versioned independently. -->
     <!-- Plugins may require different versions of MATLAB so we specify this here. -->
+    <!-- Version R2013b of MATLAB  will require a Java 7 runtime on the deployment machine. -->
     <tedseg.plugin.version>1.1</tedseg.plugin.version>
     <matlab.release.number.tedseg>R2010b</matlab.release.number.tedseg> 
 
@@ -96,6 +99,7 @@
     <module>../aim3api</module> <!-- TODO Get rid of after testing -->
     <module>../aimapi</module>
     <module>../epad-common</module>
+    <module>../epad-dto</module>
     <module>../epad-plugins</module>
     <module>../epad-ws</module>
     <module>../epad</module>
