@@ -97,7 +97,7 @@
   
   <modules>
     <module>../aim3api</module> <!-- TODO Get rid of after testing -->
-    <module>../aimapi</module>
+    <!-- <module>../aimapi</module> -->
     <module>../epad-common</module>
     <module>../epad-dto</module>
     <module>../epad-plugins</module>
