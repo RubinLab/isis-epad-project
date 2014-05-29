@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+				 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <properties>
     <restlet.version>2.1.3</restlet.version>
-       <gwt.version>2.5.1</gwt.version>
-<!--    <dcm4chee.version>2.0.27</dcm4chee.version> -->
+    <gwt.version>2.5.1</gwt.version>
     <dcm4chee.version>2.0.28</dcm4chee.version> 
     <servlet.api.version>2.5</servlet.api.version>
     <!-- Version 8.+ of Jetty uses version 3+ of javax.servlet which can cause problems with the version 2.5 that appears to be needed by Restlets -->
@@ -20,7 +19,7 @@
     <commons.codec.version>1.7</commons.codec.version>
 
     <apache.httpclient.version>4.2.3</apache.httpclient.version>
-    <apache.httpcore.version>4.2.2</apache.httpcore.version> <!-- Using 4.2.3 causes a class compatability issue -->
+    <apache.httpcore.version>4.2.2</apache.httpcore.version> <!-- Using 4.2.3 caused a class compatability issue with Restlets -->
     <apache.httpmime.version>4.2.3</apache.httpmime.version>
 
     <imagej.version>1.47</imagej.version>
@@ -42,18 +41,19 @@
     <tedseg.plugin.version>1.1</tedseg.plugin.version>
     <matlab.release.number.tedseg>R2013b</matlab.release.number.tedseg> 
 
+    <!-- TODO We need to update jjvector to R2013b MATLAB -->
     <jjvector.plugin.version>1.1</jjvector.plugin.version> 
     <matlab.release.number.jjvector>R2010b</matlab.release.number.jjvector> 
 
     <aimapi.version>1.0</aimapi.version> 
-    <aim3api.version>1.0</aim3api.version>  <!-- TODO Get rid of after testing -->
+    <aim3api.version>1.0</aim3api.version>  <!-- TODO Get rid of AIM3 after testing of AIM4 -->
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <organization> 
     <name>RubinLab</name> 
-    <url>http://www.stanford.edu/~rubin/links.html</url>
+    <url>epad.stanford.edu</url>
   </organization>
 
   <groupId>edu.stanford.epad</groupId>
@@ -110,14 +110,14 @@
     <pluginManagement>
       <plugins>
 
-	<plugin>
+				<plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-	  <version>2.3.2</version>
+					<version>2.3.2</version>
           <configuration>
             <source>1.7</source>
             <target>1.7</target>
           </configuration>
-	</plugin>
+				</plugin>
 
       </plugins>
     </pluginManagement>
@@ -128,21 +128,21 @@
   <dependencies>
 
     <dependency>
-	<groupId>log4j</groupId>
-	<artifactId>log4j</artifactId>
-        <version>${log4j.version}</version>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+      <version>${log4j.version}</version>
     </dependency>
     
     <dependency>
-	<groupId>org.slf4j</groupId>
-	<artifactId>slf4j-api</artifactId>
-        <version>${slf4j.version}</version>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
     </dependency>
     
     <dependency>
-	<groupId>org.slf4j</groupId>
-	<artifactId>slf4j-log4j12</artifactId>
-        <version>${slf4j.version}</version>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+      <version>${slf4j.version}</version>
     </dependency>
 
     <dependency>
