@@ -7,6 +7,8 @@
   <properties>
     <restlet.version>2.1.3</restlet.version>
     <gwt.version>2.5.1</gwt.version>
+    <gwtquery.version>1.4.2</gwtquery.version>
+    <totoe.version>0.4</totoe.version> 
     <dcm4chee.version>2.0.28</dcm4chee.version> 
     <servlet.api.version>2.5</servlet.api.version>
     <!-- Version 8.+ of Jetty uses version 3+ of javax.servlet which can cause problems with the version 2.5 that appears to be needed by Restlets -->
