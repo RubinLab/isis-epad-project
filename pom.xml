@@ -15,7 +15,7 @@
     <totoe.version>0.4</totoe.version> <!-- TODO Update to 0.7 -->
     <gwtquery.version>1.4.2</gwtquery.version>
 
-    <!-- No public Maven repository for gwtdom, raphael, gchart so are local repository in epad project. -->
+    <!-- No public Maven repository for gwtdom, raphael, gchart so are in local repository in epad project. -->
     <gwtdom.version>1.0.8</gwtdom.version>
     <raphael.gwt.version>r42</raphael.gwt.version> <!-- r42 corresponds to Raphael release number. -->
     <gchart.version>2.7</gchart.version> 
@@ -24,7 +24,7 @@
     <pixelmed.version>20140326</pixelmed.version> 
 
     <aimapi.version>1.0</aimapi.version> 
-    <aim3api.version>1.0</aim3api.version>  <!-- TODO Get rid of AIM3 after testing of AIM4 -->
+    <aim3api.version>1.0</aim3api.version>  <!-- TODO Get rid of after move to AIM 4 API -->
 
     <restlet.version>2.1.3</restlet.version>
 
@@ -41,7 +41,7 @@
     <imagej.version>1.47</imagej.version>
     <jai.imageio.version>1.1</jai.imageio.version>
 
-    <log4j.version>1.2.16</log4j.version>
+    <log4j.version>1.2.17</log4j.version>
     <slf4j.version>1.6.1</slf4j.version>
     <junit.version>3.8.1</junit.version>
 
@@ -107,14 +107,14 @@
   </repositories>
   
   <modules>
-    <module>../aim3api</module> <!-- TODO Get rid of after testing -->
+    <module>../aim3api</module> <!-- TODO Get rid of after move to AIM 4 API -->
     <module>../aimapi</module> 
     <module>../epad-common</module>
     <module>../epad-dto</module>
     <module>../epad-plugins</module>
     <module>../lesiontracking</module>
     <module>../epad-ws</module>
-    <module>../epad</module> 
+    <module>../epad</module>
   </modules>
 
   <build>
