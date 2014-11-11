@@ -121,7 +121,7 @@
     <module>../epad-common</module>
     <module>../epad-dto</module>
     <module>../epad-plugins</module>
-    <module>../lesiontracking</module>
+    <module>../lesion-tracking</module>
     <module>../epad-ws</module>
     <module>../epad</module>
   </modules>
