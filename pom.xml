@@ -63,6 +63,9 @@
     <!-- TODO We need to update jjvector to R2013b MATLAB -->
     <jjvector.plugin.version>1.1</jjvector.plugin.version> 
     <matlab.release.number.jjvector>R2010b</matlab.release.number.jjvector> 
+    
+	<mriseg.plugin.version>1.1</mriseg.plugin.version> 
+    <matlab.release.number.mriseg>R2010b</matlab.release.number.mriseg> 
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
