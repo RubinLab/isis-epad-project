@@ -113,6 +113,7 @@
     <module>../epad-dto</module>
     <module>../epad-plugins</module>
     <module>../lesiontracking</module>
+    <module>../Dicom-3D-ROI-Editor</module>
     <module>../epad-ws</module>
     <module>../epad</module>
   </modules>
