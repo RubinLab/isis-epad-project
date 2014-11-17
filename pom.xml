@@ -63,8 +63,8 @@
     <jjvector.plugin.version>1.1</jjvector.plugin.version> 
     <matlab.release.number.jjvector>R2013b</matlab.release.number.jjvector> 
     
-	<mriseg.plugin.version>1.1</mriseg.plugin.version> 
-    <matlab.release.number.mriseg>R2013b</matlab.release.number.mriseg> 
+	<lesionseg.plugin.version>1.1</lesionseg.plugin.version> 
+    <matlab.release.number.lesionseg>R2013b</matlab.release.number.lesionseg> 
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
