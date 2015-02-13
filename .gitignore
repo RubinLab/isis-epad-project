@@ -12,5 +12,6 @@
 .idea
 
 # Exclude build directory
-target/*
+target
 .
+
