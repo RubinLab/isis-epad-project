@@ -47,6 +47,11 @@
 
     <mysql.connector.version>5.1.22</mysql.connector.version>
     <gson.version>2.2.1</gson.version>
+	<hsqldb.version>1.8.0.7</hsqldb.version>
+	<mongodb.version>2.13.0</mongodb.version>
+	<javamail.version>1.4</javamail.version>
+	<json.version>20140107</json.version>
+	<bcrypt.version>0.3m</bcrypt.version>
 
     <!-- For the moment we give plugins the same version number as the overall ePAD project, though they could be versioned independently. -->
     <!-- Plugins may require different versions of MATLAB so we specify this here. -->
@@ -54,9 +59,17 @@
     <tedseg.plugin.version>1.1</tedseg.plugin.version>
     <matlab.release.number.tedseg>R2013b</matlab.release.number.tedseg> 
 
-    <!-- TODO We need to update jjvector to R2013b MATLAB -->
+    <riesz.plugin.version>1.1</riesz.plugin.version>
+    <matlab.release.number.riesz>R2013b</matlab.release.number.riesz>
+
+    <sampleplugin.plugin.version>1.1</sampleplugin.plugin.version>
+    <matlab.release.number.sampleplugin>R2013b</matlab.release.number.sampleplugin>
+
     <jjvector.plugin.version>1.1</jjvector.plugin.version> 
-    <matlab.release.number.jjvector>R2010b</matlab.release.number.jjvector> 
+    <matlab.release.number.jjvector>R2013b</matlab.release.number.jjvector>
+
+	<lesionseg.plugin.version>1.1</lesionseg.plugin.version>
+    <matlab.release.number.lesionseg>R2013b</matlab.release.number.lesionseg>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -112,9 +125,9 @@
     <module>../epad-common</module>
     <module>../epad-dto</module>
     <module>../epad-plugins</module>
-    <module>../lesiontracking</module>
     <module>../Dicom-3D-ROI-Editor</module>
     <module>../epad-ws</module>
+    <module>../lesiontracking</module>
     <module>../epad</module>
   </modules>
 
@@ -148,7 +161,7 @@
     <dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-      <version>${slf4j.version}</version> 
+      <version>${slf4j.version}</version>
     </dependency>
     
     <dependency>
