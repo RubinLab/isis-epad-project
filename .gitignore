@@ -7,6 +7,11 @@
 .project
 .classpath
 
+#Ignore Intellij files
+*.iml
+.idea
+
 # Exclude build directory
-target/*
+target
 .
+

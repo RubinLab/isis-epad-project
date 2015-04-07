@@ -11,7 +11,7 @@
     <!-- Version 8.+ of Jetty uses version 3+ of javax.servlet which can cause problems with the version 2.5 that appears to be needed by Restlets -->
     <jetty.version>7.6.5.v20120716</jetty.version>
 
-    <gwt.version>2.5.1</gwt.version> <!-- TODO Update to 2.6.0 -->
+    <gwt.version>2.6.1</gwt.version> <!-- TODO Update to 2.6.0 -->
     <totoe.version>0.4</totoe.version> <!-- TODO Update to 0.7 -->
     <gwtquery.version>1.4.2</gwtquery.version>
 
@@ -60,16 +60,16 @@
     <matlab.release.number.tedseg>R2013b</matlab.release.number.tedseg> 
 
     <riesz.plugin.version>1.1</riesz.plugin.version>
-    <matlab.release.number.riesz>R2013b</matlab.release.number.riesz> 
+    <matlab.release.number.riesz>R2013b</matlab.release.number.riesz>
 
     <sampleplugin.plugin.version>1.1</sampleplugin.plugin.version>
-    <matlab.release.number.sampleplugin>R2013b</matlab.release.number.sampleplugin> 
+    <matlab.release.number.sampleplugin>R2013b</matlab.release.number.sampleplugin>
 
     <jjvector.plugin.version>1.1</jjvector.plugin.version> 
-    <matlab.release.number.jjvector>R2013b</matlab.release.number.jjvector> 
-    
-	<lesionseg.plugin.version>1.1</lesionseg.plugin.version> 
-    <matlab.release.number.lesionseg>R2013b</matlab.release.number.lesionseg> 
+    <matlab.release.number.jjvector>R2013b</matlab.release.number.jjvector>
+
+	<lesionseg.plugin.version>1.1</lesionseg.plugin.version>
+    <matlab.release.number.lesionseg>R2013b</matlab.release.number.lesionseg>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -125,8 +125,9 @@
     <module>../epad-common</module>
     <module>../epad-dto</module>
     <module>../epad-plugins</module>
+    <module>../Dicom-3D-ROI-Editor</module>
     <module>../epad-ws</module>
-    <module>../lesion-tracking</module>
+    <module>../lesiontracking</module>
     <module>../epad</module>
   </modules>
 
