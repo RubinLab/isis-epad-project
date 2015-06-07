@@ -24,7 +24,7 @@
     <pixelmed.version>20140326</pixelmed.version> 
 
     <aimapi.version>1.0</aimapi.version> 
-    <aim3api.version>1.0</aim3api.version>  <!-- TODO Get rid of after move to AIM 4 API -->
+   <aim3api.version>1.0</aim3api.version>   <!--   TODO Get rid of after move to AIM 4 API -->
 
     <restlet.version>2.1.3</restlet.version>
 
@@ -115,12 +115,13 @@
   </repositories>
   
   <modules>
-    <module>../aim3api</module> <!-- TODO Get rid of after move to AIM 4 API -->
+    <module>../aim3api</module> <!--  TODO Get rid of after move to AIM 4 API -->
     <module>../aimapi</module> 
     <module>../epad-common</module>
     <module>../epad-dto</module>
     <module>../epad-plugins</module>
-    <module>../lesion-tracking</module>
+    <!-- <module>../lesion-tracking</module> -->
+    <!-- <module>../bimm</module> --> 
     <module>../epad-ws</module>
     <module>../epad</module>
   </modules>
