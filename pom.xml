@@ -125,11 +125,11 @@
     <module>../epad-common</module>
     <module>../epad-dto</module>
     <module>../epad-plugins</module>
+    <module>../epad-ws</module>
 
-    <!-- <module>../lesion-tracking</module> -->
+    <module>../lesion-tracking</module>
     <!-- <module>../bimm</module> --> 
 
-    <module>../epad-ws</module>
     <module>../epad</module>
   </modules>
 
