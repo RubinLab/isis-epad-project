@@ -33,6 +33,7 @@
     <commons.cli.version>1.2</commons.cli.version>
     <commons.io.version>1.4</commons.io.version>
     <commons.codec.version>1.7</commons.codec.version>
+    <commons.net.version>2.0</commons.net.version>
 
     <apache.httpclient.version>4.4.1</apache.httpclient.version>
     <apache.httpcore.version>4.2.2</apache.httpcore.version> <!-- Using 4.2.3 caused a class compatability issue with Restlets -->
@@ -49,7 +50,7 @@
     <gson.version>2.2.1</gson.version>
 	<hsqldb.version>1.8.0.7</hsqldb.version>
 	<mongodb.version>2.13.0</mongodb.version>
-	<javamail.version>1.4</javamail.version>
+	<javamail.version>1.5.1</javamail.version>
 	<json.version>20140107</json.version>
 	<bcrypt.version>0.3m</bcrypt.version>
 
@@ -99,7 +100,12 @@
       <name>DCM4CHE Maven Repository</name>
       <url>http://www.dcm4che.org/maven2/</url>
     </repository>
-
+    <repository>
+        <id>com.springsource.repository.bundles.external</id>
+        <name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
+        <url>http://repository.springsource.com/maven/bundles/external</url>
+    </repository>
+    
     <!-- Use repository in ${project.basedir}/lib for JARs that can not be found in public Maven repositories. -->
     <!-- Each project ./lib directory should contain dependencies that may be used by that project. -->
     <!-- See: http://blog.dub.podval.org/2010/01/maven-in-project-repository.html -->
