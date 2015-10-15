@@ -126,7 +126,7 @@
   </repositories>
   
   <modules>
-    <module>../aim3api</module> <!--  TODO Get rid of after move to AIM 4 API -->
+    <!--  >module>../aim3api</module --> <!--  TODO Get rid of after move to AIM 4 API -->
     <module>../aimapi</module> 
     <module>../epad-common</module>
     <module>../epad-dto</module>
