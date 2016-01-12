@@ -57,6 +57,10 @@
     <!-- For the moment we give plugins the same version number as the overall ePAD project, though they could be versioned independently. -->
     <!-- Plugins may require different versions of MATLAB so we specify this here. -->
     <!-- Version R2013b of MATLAB  will require a Java 7 runtime on the deployment machine. -->
+	
+	<vanderbilt.plugin.version>1.1</vanderbilt.plugin.version>
+    <matlab.release.number.vanderbilt>R2013b</matlab.release.number.vanderbilt> 
+
     <tedseg.plugin.version>1.1</tedseg.plugin.version>
     <matlab.release.number.tedseg>R2013b</matlab.release.number.tedseg> 
 
@@ -134,7 +138,7 @@
     <module>../epad-ws</module>
 
     <module>../lesion-tracking</module>
-    <!-- <module>../bimm</module> --> 
+    <!--  <module>../BIMM</module>  -->
 
     <module>../epad</module>
   </modules>
