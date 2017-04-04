@@ -62,19 +62,19 @@
     <matlab.release.number.vanderbilt>R2013b</matlab.release.number.vanderbilt>  -->
 
     <tedseg.plugin.version>1.1</tedseg.plugin.version>
-    <matlab.release.number.tedseg>R2013b</matlab.release.number.tedseg> 
+    <matlab.release.number.tedseg>R2016b</matlab.release.number.tedseg> 
 
     <riesz.plugin.version>1.1</riesz.plugin.version>
-    <matlab.release.number.riesz>R2013b</matlab.release.number.riesz> 
+    <matlab.release.number.riesz>R2016b</matlab.release.number.riesz> 
 
     <sampleplugin.plugin.version>1.1</sampleplugin.plugin.version>
-    <matlab.release.number.sampleplugin>R2013b</matlab.release.number.sampleplugin> 
+    <matlab.release.number.sampleplugin>R2016b</matlab.release.number.sampleplugin> 
 
     <jjvector.plugin.version>1.1</jjvector.plugin.version> 
-    <matlab.release.number.jjvector>R2013b</matlab.release.number.jjvector> 
+    <matlab.release.number.jjvector>R2016b</matlab.release.number.jjvector> 
     
 	<lesionseg.plugin.version>1.1</lesionseg.plugin.version> 
-    <matlab.release.number.lesionseg>R2013b</matlab.release.number.lesionseg> 
+    <matlab.release.number.lesionseg>R2016b</matlab.release.number.lesionseg> 
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
