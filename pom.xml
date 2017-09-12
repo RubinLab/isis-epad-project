@@ -134,15 +134,29 @@
     <module>../aimapi</module> 
     <module>../epad-common</module>
     <module>../epad-dto</module>
-    <module>../epad-plugins</module>
     <module>../epad-ws</module>
 
-    <module>../lesion-tracking</module>
-    <!--  <module>../BIMM</module>  -->
-
-    <module>../epad</module>
+   
   </modules>
-
+  <profiles>
+    <profile>
+             <id>full</id>
+             <activation>
+                <activeByDefault>true</activeByDefault>
+             </activation>
+             <modules>
+                 <module>../epad-plugins</module>
+                 <module>../lesion-tracking</module>
+                <module>../epad</module>
+             </modules>
+    </profile>
+      
+      <profile>
+             <id>opensource</id>
+             <modules>
+             </modules>
+    </profile>
+    </profiles>
   <build>
     <pluginManagement>
       <plugins>
