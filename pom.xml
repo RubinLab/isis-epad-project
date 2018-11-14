@@ -21,7 +21,7 @@
     <gchart.version>2.7</gchart.version> 
 
     <!-- No public Maven repository for Pixelmed so in local repository in epad-common project. -->
-    <pixelmed.version>20160907</pixelmed.version> 
+    <pixelmed.version>20181021</pixelmed.version> 
 
     <aimapi.version>1.0</aimapi.version> 
    <aim3api.version>1.0</aim3api.version>   <!--   TODO Get rid of after move to AIM 4 API -->
